@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,4 +13,69 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.testimonial-container {
+  background-color: #4468cc;
+  border-radius: 10px;
+  color: #fff;
+  width: 80%;
+  min-width: 400px;
+  max-width: 700px;
+  padding: 50px 40px;
+}
+
+.timer {
+  background-color: #fff;
+  height: 4px;
+  width: calc(100% - 2 * (1.8rem + 10px));
+  margin-left: calc(1.8rem + 10px);
+  transform-origin: left center;
+  animation: timer 10s linear infinite backwards;
+}
+
+@keyframes timer {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.quote-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 15px 0;
+}
+
+i {
+  opacity: 0.3;
+  font-size: 1.8rem;
+}
+
+.quote-container p {
+  margin: 5px 10px;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.person-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.person-container p {
+  margin: 0 0 10px;
 }
